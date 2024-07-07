@@ -1,0 +1,104 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #094886; /* Color azul estilo Banco de Chile */
+  background-image: url('https://portales.bancochile.cl/uploads/000/018/713/05f7f67d-1be7-4f4c-8953-e8503f73d520/original/Gra_fica_FFMMDigitales_230821_1_.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #1293cf;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border-top: 6px solid #003366; /* Color azul estilo Banco de Chile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Form input and button styling */
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input,
+select,
+button {
+  padding: 12px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002244; /* Color azul oscuro */
+}
+
+#result {
+  font-size: 1.4em;
+  color: #003366;
+  margin-top: 20px;
+}
+
+canvas {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+}
+
+/* diseño Responsive*/
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  input,
+  select,
+  button {
+    max-width: 100%;
+  }
+
+  canvas {
+    height: 200px;
+  }
+}
